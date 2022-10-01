@@ -19,7 +19,7 @@ namespace ConfigHack
 		public const string Description = "Loads configs from a different file because Proton :)";
 		public const string Author = "CrispyPin";
 		public const string Version = "0.1.0";
-		public const string DownloadLink = null; // Download Link for the Mod.  (Set as null if none)
+		public const string DownloadLink = "https://github.com/CrispyPin/CVR-ConfigHack/releases";
 	}
 
 	public class ConfigHackMod : MelonMod
