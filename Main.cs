@@ -35,6 +35,14 @@ namespace ConfigHack
 			SaveAlternateConfig();
 		}
 
+		public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+		{
+			if (buildIndex == -1) // loaded world scene
+			{
+				SaveAlternateConfig();
+			}
+		}
+
 		void LoadAlternateConfig()
 		{
 			MelonLogger.Msg("Loading from game2.config");
