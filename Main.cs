@@ -18,7 +18,7 @@ namespace ConfigHack
 		public const string Name = "ConfigHack";
 		public const string Description = "Loads configs from a different file because Proton :)";
 		public const string Author = "CrispyPin";
-		public const string Version = "0.1.0";
+		public const string Version = "0.1.1";
 		public const string DownloadLink = "https://github.com/CrispyPin/CVR-ConfigHack/releases";
 	}
 
