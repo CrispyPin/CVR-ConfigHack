@@ -1,14 +1,14 @@
 ﻿using MelonLoader;
-using HarmonyLib;
-using System;
+// using HarmonyLib;
+// using System;
 using System.IO;
-using System.Reflection;
+// using System.Reflection;
 using UnityEngine;
 
 
-using ABI_RC.Core;
-using ABI_RC.Core.IO;
-using ABI_RC.Core.Player;
+// using ABI_RC.Core;
+// using ABI_RC.Core.IO;
+// using ABI_RC.Core.Player;
 using ABI_RC.Core.Savior;
 
 namespace ConfigHack
@@ -57,7 +57,7 @@ namespace ConfigHack
 		{
 			MelonLogger.Msg("Saving to game2.config");
 			CVRFileSettings settings = MetaPort.Instance.settings.GetSerializedSettings();
-			File.WriteAllText(ConfigPath(), JsonUtility.ToJson(settings));
+			File.WriteAllText(ConfigPath(), JsonUtility.ToJson(settings, true));
 		}
 
 		string ConfigPath()
