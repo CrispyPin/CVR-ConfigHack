@@ -3,14 +3,12 @@ GAME_DIR = ${STEAMAPPS}/common/ChilloutVR
 CONFIG_DIR = ${STEAMAPPS}/compatdata/661130/pfx/drive_c/users/steamuser/AppData/LocalLow/Alpha\ Blend\ Interactive/ChilloutVR
 
 .PHONY: build
-build: Output/ConfigHack.dll
-
-Output/ConfigHack.dll: Main.cs ConfigHack.csproj ConfigHack.sln Properties/AssemblyInfo.cs
+build:
 	ln -sf $(GAME_DIR) ChilloutVR
 	msbuild
 
 .PHONY: install
-install: Output/ConfigHack.dll
+install:
 	ln -sf $(shell pwd)/Output/ConfigHack.dll $(GAME_DIR)/Mods/
 
 .PHONY: links

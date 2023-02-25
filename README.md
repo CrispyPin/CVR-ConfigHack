@@ -20,5 +20,13 @@ ln -sf /dev/null UrlWhitelist.json
 If you are installing from source (or just download the `Makefile`), use `make links` to automate this process. The makefile will also first rename any existing configs to `<name>.old`.
 
 ## Status
-I may add support for saving some of `camera.config`, `saved_calibrations.json`, `moderationIndex.json`, `UrlWhitelist.json` and `menu.config` in the future, but right now it only handles `game.config` (renamed to `game2.config`), which contains the main game settings.
+- [x] `game.config`
+- [x] `saved_calibrations.json`
+- [ ] `camera.config`
+- [ ] `moderationIndex.json`
+- [ ] `UrlWhitelist.json`
+- [ ] `menu.config`
+
+I may add support for saving more of these in the future.
+
 
